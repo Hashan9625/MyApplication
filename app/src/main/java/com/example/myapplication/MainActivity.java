@@ -39,18 +39,18 @@ public class MainActivity extends AppCompatActivity {
 
 //        chenge.getDisplay(no)
 
-        if (! Python.isStarted()) {
-            Python.start(new AndroidPlatform(this));
-        }
-        //start python
-
-        Python py = Python.getInstance();
-
-        PyObject pyobj = py.getModule("myPython");
-
-        PyObject obj = pyobj.callAttr("main");
-
-        text.setText(obj.toString());
+//        if (! Python.isStarted()) {
+//            Python.start(new AndroidPlatform(this));
+//        }
+//        //start python
+//
+//        Python py = Python.getInstance();
+//
+//        PyObject pyobj = py.getModule("myPython");
+//
+//        PyObject obj = pyobj.callAttr("main");
+//
+//        text.setText(obj.toString());
 
 
     }
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         Intent speechIntent=new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         speechIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         speechIntent.putExtra(RecognizerIntent.EXTRA_PROMPT,"speech");
-        startActivityForResult(speechIntent,RECRESULT);                                                               //  -------------------   run time error
+        startActivityForResult(speechIntent,RECRESULT);  //  -------------------   run time error
 
 
     }
