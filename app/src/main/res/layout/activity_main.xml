@@ -30,6 +30,7 @@
                     android:id="@+id/ani"
                     android:layout_width="match_parent"
                     android:layout_height="1920px"
+                    android:src="@drawable/normal"
                      />
 
             </androidx.appcompat.widget.Toolbar>
@@ -41,12 +42,22 @@
                 android:layout_gravity="center"
                 android:onClick="onClick"
                 android:text="OK"></Button>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tex"
                 android:layout_gravity="center"
+
                 ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tex2"
+                android:layout_gravity="center"
+                ></TextView>
+
         </LinearLayout>
     </ScrollView>
 
